@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <!--Fixes I need to make:
+    -Calculator needs to responsive
+    -Decimals should be limited to one for every number
+    -Chaining should be allowed after equal, EX. 4 + 2 = 6 + 3 = 9 + 7 = 15
+    -Needs to be mobile friendly
+    -JS is a complete and utter mess, needs organization-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="cal.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container-fluid" id="container-fluid1">
+      <div class="container">
+        <h1>Calculator<hr></h1>
+        
+        <div id="outerpanel" class="panel panel-primary col-xs-3">
+          <div id="innerpanel" class="panel-body panel">
+            <div >
+              <div class="input-group">
+                <input type="text" class="form-control" id="textbox">
+              </div>
+              <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" onclick="ce()">CE</button>
+                <button type="button" class="btn btn-default" onclick="ce()">AC</button>
+                <button type="button" class="btn btn-default" onclick="mod()">%</button>
+              </div>
+              <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" onclick="seven()">7</button>
+                <button type="button" class="btn btn-default" onclick="eight()">8</button>
+                <button type="button" class="btn btn-default" onclick="nine()">9</button>
+                <button type="button" class="btn btn-default" onclick="division()">/</button>
+              </div>
+              <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" onclick="four()">4</button>
+                <button type="button" class="btn btn-default" onclick="five()">5</button>
+                <button type="button" class="btn btn-default" onclick="six()">6</button>
+                <button type="button" class="btn btn-default" onclick="multiply()">*</button>
+              </div>
+              <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" onclick="one()">1</button>
+                <button type="button" class="btn btn-default" onclick="two()">2</button>
+                <button type="button" class="btn btn-default" onclick="three()">3</button>
+                <button type="button" class="btn btn-default" onclick="subtract()">-</button>
+              </div>
+              <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" onclick="zero()">0</button>
+                <button type="button" class="btn btn-default" onclick="decimal()">.</button>
+                <button type="button" class="btn btn-default" onclick="equal()">=</button>
+                <button type="button" class="btn btn-default" onclick="plus()">+</button>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="cal.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
